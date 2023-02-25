@@ -1012,6 +1012,11 @@
             </div>
         </div>
     </div>
+    <script type="module">
+                $(document).ready(function(){
+            console.log('ready');
+        })
+    </script>
 </body>
 
 </html>
