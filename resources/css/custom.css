@@ -7,6 +7,7 @@
     --primary-color: #1d1e22;
     --dark-color: #393f4d;
     --light-color: #f0f0f0;
+    --white-color: #fff;
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
     --z-fixed: 100
@@ -59,6 +60,62 @@
     margin-top: 100px !important;
 }
 /* margins end */
+
+/* datatable search start */
+.dataTables_filter label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.dataTables_filter label input{
+    border-radius: 15px !important;
+    background-color: var(--light-color) !important;
+}
+/* datatable search end*/
+
+
+/* datatable entries start*/
+.dataTables_length label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.dataTables_length label select {
+    width: 50px !important;
+    height: 20px !important;
+    margin: 0px 5px !important;
+}
+/* datatable entries end*/
+
+
+/* datatable pagination start*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    margin-left: 0px !important;
+    padding: 0px !important;
+}
+
+.dataTables_info {
+    font-size: 12px;
+    margin-left: 5px;
+}
+/* datatable pagination end*/
+
+
+/* tables */
+.table.primary-header thead tr {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color);
+}
+
+.table.stripes tbody tr:nth-child(even) {
+    background-color: var(--light-color) !important;
+}
+
+.table.stripes tbody tr:nth-child(odd) {
+    background-color: var(--white-color) !important;
+}
 /* bootstrap updated classes end*/
 
 *,

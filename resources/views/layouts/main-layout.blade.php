@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 
 <body id="body-pd">
@@ -26,7 +28,7 @@
         $(document).ready(function() {
             // adding active calss to currently active link on page load
             var currentUrl = window.location.href;
-            $('a.active').removeClass('active');
+            $('.nav_link.active').removeClass('active');
             // Loop through all the links on the page
             $('.nav_link').each(function() {
                 var link = $(this);
