@@ -54,6 +54,43 @@
 /* text color end */
 
 
+/* Buttons start */
+.btn-dark {
+    background-color: var(--dark-color) !important;
+    color: var(--light-color) !important;
+    border: 0px !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    border: 0px !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color) !important;
+    color: var(--dark-color) !important;
+    border: 0px !important;
+}
+
+.btn-dark:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color) !important;
+    color: var(--light-color) !important;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--light-color) !important;
+    border: 0px !important;
+}
+/* Buttons end */
+
+
 
 /* margins start */
 .mt-100px {
@@ -66,10 +103,15 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    font-size: 12px;
 }
 .dataTables_filter label input{
     border-radius: 15px !important;
     background-color: var(--light-color) !important;
+}
+
+.dataTables_empty {
+    font-size: 12px;
 }
 /* datatable search end*/
 
@@ -86,6 +128,9 @@
     width: 50px !important;
     height: 20px !important;
     margin: 0px 5px !important;
+    border-radius: 15px !important;
+    padding: 5px !important;
+    padding-left:8px !important ;
 }
 /* datatable entries end*/
 
@@ -254,7 +299,7 @@ a {
     font-size: 1.25rem
 }
 
-.show {
+.nav-show {
     left: 0
 }
 
@@ -312,7 +357,7 @@ a {
         padding: 1rem 1rem 0 0;
     }
 
-    .show {
+    .nav-show {
         width: calc(var(--nav-width) + 156px)
     }
 

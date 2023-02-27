@@ -14,7 +14,7 @@
                     <i class="fa-solid fa-house"></i>
                     <span class="nav_name">Dashboard</span>
                 </a>
-                <a href="{{route('admin.owner')}}" class="nav_link">
+                <a href="{{route('admin.owner.index')}}" class="nav_link">
                     <i class="fa-solid fa-user"></i>
                     <span class="nav_name">Owner</span>
                 </a>
